@@ -1,0 +1,6 @@
+@openzeppelin/=lib/openzeppelin-contracts/
+@manifoldxyz/=lib/creator-core-solidity
+@chainlink/=lib/chainlink
+@openzeppelinn/=lib/openzeppelin-contracts-upgradeable/contracts/
+forge-std/=lib/forge-std/src/
+solmate/=lib/solmate/src/
