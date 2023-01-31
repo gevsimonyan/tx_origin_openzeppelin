@@ -11,35 +11,13 @@ contract Wallet {
     }
 
     function transfer(address to, uint256 amount) public {
-        // require(tx.origin == owner, "Only owner!");
-        require(msg.sender == tx.origin, "Only EOA account");
-        // require(msg.sender == owner, "only owner!");
+        require(tx.origin == owner, "Only owner!");
 
         (bool sent, ) = payable(to).call{value: amount}("");
 
         require(sent, "Fail to send Ether");
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 contract Attack {
     address payable public owner;

@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
 
-
 contract Calldata {
 
     function str1(string memory _srt) external pure returns(uint256 ptr){
